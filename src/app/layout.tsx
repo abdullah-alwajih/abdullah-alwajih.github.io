@@ -4,16 +4,14 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Header from "@/components/Header";
 import TopLeftImg from "@/components/TopLeftImg";
+import {METADATA} from "@/helper/metadata";
 
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
   weight: ['100', '200', '300', '400', '500', '600', '700', '800']
 });
-export const metadata: Metadata = {
-  title: "Abdullah Al-Wajih",
-  description: "Software Engineer",
-};
+export const metadata: Metadata = METADATA;
 export default function RootLayout({
                                      children,
                                    }: Readonly<{
