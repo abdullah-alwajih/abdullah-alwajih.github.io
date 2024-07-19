@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type {Metadata} from "next";
+import {Inter} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
+                                     children,
+                                   }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
@@ -25,10 +25,11 @@ export default function RootLayout({
     </div>
     {children}
 
-    <Script  src="/assets/js/particles.js" strategy="lazyOnload"></Script>
+    <Script src="/assets/js/particles.js" strategy="lazyOnload"></Script>
 
-    <Script  src="/assets/js/script.js" strategy="lazyOnload"></Script>
-    <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" strategy="lazyOnload"></Script>
+    <Script src="/assets/js/script.js" strategy="lazyOnload"></Script>
+    <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+            strategy="lazyOnload"></Script>
     <Script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" strategy="lazyOnload"></Script>
     </body>
 

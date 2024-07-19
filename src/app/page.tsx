@@ -25,7 +25,7 @@ export default function Home() {
 
         <Experiences/>
 
-      <Skills />
+        <Skills/>
 
 
         <Contact/>
