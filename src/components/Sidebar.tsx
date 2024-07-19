@@ -6,7 +6,7 @@ export default function Sidebar() {
       <figure className="avatar-box">
         <Image
 
-          src="./assets/images/test.svg"
+          src="./assets/images/test.svg" priority
           alt="Richard hanrick" width="80" height={80}/>
       </figure>
       <div className="info-content">

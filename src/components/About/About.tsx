@@ -213,7 +213,7 @@ export default function About() {
 
           <div className="modal-Image-wrapper">
             <figure className="modal-avatar-box">
-              <Image src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" height={80} data-modal-Image/>
+              <Image src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" height="80" />
             </figure>
 
             <Image src="./assets/images/icon-quote.svg" width={34} height={23} alt="quote icon"/>
