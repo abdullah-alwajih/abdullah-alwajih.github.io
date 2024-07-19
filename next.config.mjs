@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
+   images: {
     unoptimized: true, // This disables the built-in Image Optimization API
   },
   output: 'export',
