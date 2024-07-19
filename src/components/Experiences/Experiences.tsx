@@ -127,7 +127,7 @@ export default function Experiences() {
         <ul className="project-list">
 
           <li className="project-item  active" data-filter-item data-category="web development">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -145,7 +145,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web development">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -163,7 +163,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web design">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -181,7 +181,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="applications">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -199,7 +199,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web design">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -217,7 +217,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web design">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -235,7 +235,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web development">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -253,7 +253,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="applications">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">
@@ -271,7 +271,7 @@ export default function Experiences() {
           </li>
 
           <li className="project-item  active" data-filter-item data-category="web development">
-            <a href="#">
+            <a href=".#">
 
               <figure className="project-Image">
                 <div className="project-item-icon-box">

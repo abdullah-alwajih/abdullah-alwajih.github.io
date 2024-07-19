@@ -6,7 +6,7 @@ export default function Sidebar() {
       <figure className="avatar-box">
         <Image
 
-          src="/assets/images/test.svg"
+          src="./assets/images/test.svg"
           alt="Richard hanrick" width="80" height={80}/>
       </figure>
       <div className="info-content">
@@ -27,7 +27,7 @@ export default function Sidebar() {
           </div>
           <div className="contact-info">
             <p className="contact-title">Email</p>
-            <a href="mailto:Pro.Abdullah.AlWajih@gmail.com" className="contact-link">Pro.Abdullah.AlWajih</a>
+            <a href=".mailto:Pro.Abdullah.AlWajih@gmail.com" className="contact-link">Pro.Abdullah.AlWajih</a>
           </div>
         </li>
         <li className="contact-item">
@@ -36,7 +36,7 @@ export default function Sidebar() {
           </div>
           <div className="contact-info">
             <p className="contact-title">Phone</p>
-            <a href="tel:+966500608507" className="contact-link">+966 500 608 507</a>
+            <a href=".tel:+966500608507" className="contact-link">+966 500 608 507</a>
           </div>
         </li>
 
@@ -62,12 +62,12 @@ export default function Sidebar() {
       <div className="separator"></div>
       <ul className="social-list">
         <li className="social-item">
-          <a href="https://github.com/abdullah-alwajih" target='_blank' className="social-link">
+          <a href=".https://github.com/abdullah-alwajih" target='_blank' className="social-link">
             <ion-icon name="logo-github"></ion-icon>
           </a>
         </li>
         <li className="social-item">
-        <a href="https://www.linkedin.com/in/abdullah-alwajih" target='_blank' className="social-link">
+        <a href=".https://www.linkedin.com/in/abdullah-alwajih" target='_blank' className="social-link">
             <ion-icon name="logo-linkedin"></ion-icon>
           </a>
         </li>

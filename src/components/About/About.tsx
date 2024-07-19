@@ -46,7 +46,7 @@ export default function About() {
           <li className="service-item">
 
             <div className="service-icon-box">
-              <Image src="/assets/images/icon-design.svg
+              <Image src="./assets/images/icon-design.svg
                 " alt="design icon" width="40" height={40}/>
             </div>
 
@@ -249,37 +249,37 @@ export default function About() {
       {/*  <ul className="clients-list has-scrollbar">*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-1-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-2-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-3-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-4-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-5-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
 
       {/*    <li className="clients-item">*/}
-      {/*      <a href="#">*/}
+      {/*      <a href=".#">*/}
       {/*        <Image src="./assets/images/logo-6-color.png" alt="client logo"/>*/}
       {/*      </a>*/}
       {/*    </li>*/}
