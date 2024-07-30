@@ -1,9 +1,7 @@
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,19 +16,18 @@ export default function RootLayout({
   return (
     <html lang="en">
 
-    <body className={inter.className}>
+    <body >
     <div id="particles-js">
       <canvas className="particles-js-canvas-el" width="3320" height="1808"
               style={{width: "100%", height: "100%"}}></canvas>
     </div>
     {children}
 
-    <Script src="/assets/js/particles.js" strategy="lazyOnload"></Script>
+    <Script src="/assets/js/particles.js" type="text/javascript" strategy="lazyOnload"></Script>
 
-    <Script src="/assets/js/script.js" strategy="lazyOnload"></Script>
-    <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    <Script src="/assets/js/script.js" strategy="lazyOnload" type="text/javascript"></Script>
+    <Script  type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
             strategy="lazyOnload"></Script>
-    <Script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" strategy="lazyOnload"></Script>
     </body>
 
 
