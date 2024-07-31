@@ -1,29 +1,33 @@
-import Experiences from "@/components/Experiences/Experiences";
+"use client";
+import { Dispatch, SetStateAction } from "react";
 
-export default function Navbar() {
+interface NavbarProps {
+  activePage: string;
+  setActivePage: Dispatch<SetStateAction<string>>;
+}
+
+export default function Navbar({ activePage, setActivePage }: NavbarProps) {
+  const pages = ["about", "experiences", "skills", "contact"];
+
+  const handleClick = (page: string) => {
+    setActivePage(page);
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className="navbar">
-
       <ul className="navbar-list">
-
-        <li className="navbar-item">
-          <button className="navbar-link  active" data-nav-link>About</button>
-        </li>
-
-        <li className="navbar-item">
-          <button className="navbar-link" data-nav-link>Experiences</button>
-        </li>
-
-        <li className="navbar-item">
-          <button className="navbar-link" data-nav-link>Skills</button>
-        </li>
-
-        <li className="navbar-item">
-          <button className="navbar-link" data-nav-link>Contact</button>
-        </li>
-
+        {pages.map((page, index) => (
+          <li className="navbar-item" key={index}>
+            <button
+              className={`navbar-link ${activePage === page ? "active" : ""}`}
+              onClick={() => handleClick(page)}
+            >
+              {page.charAt(0).toUpperCase() + page.slice(1)}
+            </button>
+          </li>
+        ))}
       </ul>
-
     </nav>
   );
 }

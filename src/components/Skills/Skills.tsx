@@ -1,6 +1,6 @@
-export default function Skills() {
+export default function Skills({isActive}: {isActive: boolean}) {
   return (
-    <article className="portfolio" data-page="skills">
+    <article className={`portfolio ${isActive? "active" : ""}`}>
 
       <header>
         <h2 className="h2 article-title">Portfolio</h2>

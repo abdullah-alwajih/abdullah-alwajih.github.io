@@ -1116,6 +1116,10 @@ main {
   transform: scale(1.1);
 }
 
+.project-item > a:hover Image {
+  transform: scale(1.1);
+}
+
 .project-title,
 .project-category {
   margin-left: 10px;
