@@ -16,7 +16,7 @@ const projectData = [{
   alt: "fundo"
 }, {
   id: 4,
-  title: "Brawlhalla",
+  title: "UNICEF APP",
   category: "mobile app",
   src: "/assets/images/project-4.png",
   alt: "brawlhalla"
@@ -28,7 +28,7 @@ const projectData = [{
   alt: "metaspark"
 }, {id: 7, title: "Summary", category: "web development", src: "/assets/images/project-7.png", alt: "summary"}, {
   id: 8,
-  title: "Task Manager",
+  title: "Floosak - Money Transfer",
   category: "mobile app",
   src: "/assets/images/project-8.jpg",
   alt: "task manager"

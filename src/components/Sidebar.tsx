@@ -1,21 +1,27 @@
 import Image from "next/image";
+import {useState} from "react";
 
 export default function Sidebar() {
-  return (<aside className="sidebar" data-sidebar>
-    <div className="sidebar-info">
-      <figure className="avatar-box">
-        <Image
+   const [isActive, setIsActive] = useState(false);
 
-          src="./assets/images/test.svg" priority
+  const handleToggle = () => {
+    setIsActive(!isActive);
+  };
+  return (
+    <aside className={`sidebar ${isActive ? 'active' : ''}`}>
+      <div className="sidebar-info">
+        <figure className="avatar-box">
+        <Image
+          src="/assets/images/test.svg" priority
           alt="Richard hanrick" width="80" height={80}/>
       </figure>
       <div className="info-content">
         <h1 className="name" title="">Abdullah AL-Wajih</h1>
         <p className="title">Software Engineer</p>
       </div>
-      <button className="info_more-btn" data-sidebar-btn>
-        <span>Show Contacts</span>
-        <ion-icon name="chevron-down"></ion-icon>
+        <button className="info_more-btn" onClick={handleToggle}>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
       </button>
     </div>
     <div className="sidebar-info_more">
