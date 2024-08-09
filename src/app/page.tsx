@@ -4,7 +4,7 @@ import {useState} from "react";
 import Sidebar from "@/components/Sidebar";
 import Navbar from "@/components/Navbar";
 import About from "@/components/About/About";
-import Contact from "@/components/Contact";
+import Contact from "@/components/Contact/Contact";
 import Experiences from "@/components/Experiences/Experiences";
 import Skills from "@/components/Skills/Skills";
 
