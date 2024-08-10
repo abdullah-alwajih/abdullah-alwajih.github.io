@@ -1,0 +1,1 @@
+export const platforms = ["All", "Web design", "Mobile App", "Web development"]

@@ -1,6 +1,7 @@
 "use client";
 import React, {useState} from "react";
 import Image from "next/image";
+import {platforms} from "@/components/Projects/Projects.mock";
 
 const projectData = [{
   id: 1,
@@ -56,7 +57,7 @@ export default function Projects() {
 
   return (<section className="projects">
     <ul className="filter-list">
-      {["All", "Web design", "Mobile App", "Web development"].map((category) => (
+      {platforms.map((category) => (
         <li className="filter-item" key={category}>
           <button
             className={selectedCategory === category.toLowerCase() ? "active" : ""}
@@ -75,7 +76,7 @@ export default function Projects() {
         </div>
       </button>
       {isSelectActive && (<ul className="select-list">
-        {["All", "Web design", "Mobile App", "Web development"].map((category) => (
+        {platforms.map((category) => (
           <li className="select-item" key={category}>
             <button onClick={handleSelect}>{category}</button>
           </li>))}
