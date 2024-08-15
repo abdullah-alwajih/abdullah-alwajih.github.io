@@ -28,7 +28,7 @@
 }
 
 .navbarLink {
-  color: white;
+  color: var(--light-gray);
   font-size: var(--fs-8);
   padding: 20px 7px;
   transition: color var(--transition-1);
@@ -36,11 +36,11 @@
 
 .navbarLink:hover,
 .navbarLink:focus {
-  color: var(--light-gray-70);
+color: var(--light-gray-70);
 }
 
 .navbarLink.active {
-  color: var(--orange-yellow-crayola);
+color: var(--orange-yellow-crayola);
 }
 
 
@@ -68,7 +68,7 @@
 
 
   display: flex;
-    width: 350px;
+  width: 350px;
 
 }
 
@@ -138,8 +138,6 @@
 }
 
 
-
-
 .indicator {
   position: fixed;
   top: -35px;
@@ -201,12 +199,12 @@
 /* Responsive styles for larger than 570px screen */
 
 
-
 /* Show navigation only on mobile and tablet screens */
 @media (max-width: 768px) {
   .navigation {
     display: flex;
   }
+
   .navbar {
     display: none;
   }
@@ -217,16 +215,27 @@
   .navigation {
     display: none;
   }
+
   .navbar {
     display: block;
     border-radius: 20px 20px 0 0;
+  }
+
+  .navbarLink {
+    --fs-8: 15px;
   }
 }
 
 /* Responsive styles for larger than 1024px screen */
 @media (min-width: 1024px) {
   .navbar {
-    display: block;
+    --fs-1: 32px;
+    --fs-2: 24px;
+    --fs-3: 26px;
+    --fs-4: 18px;
+    --fs-6: 15px;
+    --fs-7: 15px;
+    --fs-8: 12px;
     position: absolute;
     bottom: auto;
     top: 0;
@@ -243,7 +252,7 @@
     padding: 0 20px;
   }
 
-  .navbarLink {
+  .navbarList {
     font-weight: var(--fw-500);
   }
 }
