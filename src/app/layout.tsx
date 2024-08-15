@@ -22,7 +22,7 @@ export default function RootLayout({
     </div>
     {children}
 
-    <Script src="/assets/js/particles.js" strategy="lazyOnload"></Script>
+    <Script src="/assets/js/particles.js" ></Script>
     <Script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
             strategy="lazyOnload"></Script>
     </body>

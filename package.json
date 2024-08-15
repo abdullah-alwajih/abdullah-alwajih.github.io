@@ -5,8 +5,6 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "rebuild": "npm run build && npm run postbuild",
-    "postbuild": "sudo rm -r /usr/local/var/www/portfolio && sudo cp -r ./out /usr/local/var/www/portfolio",
     "start": "next start",
     "lint": "next lint",
     "upgrade": "ncu && ncu -u && npm install --force"
