@@ -91,7 +91,7 @@ export default function Projects() {
               <div className="project-item-icon-box">
                 <ion-icon name="eye-outline"></ion-icon>
               </div>
-              <Image src={project.src} width={600} height={450} alt={project.alt} />
+              <Image src={project.src} width={600} height={450} alt={project.alt} loading="lazy"/>
             </figure>
             <h3 className="project-title">{project.title}</h3>
             <p className="project-category">{project.category}</p>
