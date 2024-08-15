@@ -19,5 +19,5 @@ jobs:
           password: ${{ secrets.FTP_PRODUCTION_PASSWORD }}
           protocol: ftps
           port: 21
-          local-dir: ./files  # Ensure this path matches your local directory
+          local-dir: ./files/  # Ensure this path matches your local directory
           server-dir: /home/wajih/ftp/files/
