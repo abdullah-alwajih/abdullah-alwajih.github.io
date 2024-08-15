@@ -7,7 +7,6 @@ import About from "@/components/About/About";
 import Contact from "@/components/Contact/Contact";
 import Experiences from "@/components/Experiences/Experiences";
 import Skills from "@/components/Skills/Skills";
-import Nav from "@/components/Nav/Nav";
 
 export default function Home() {
   const [activePage, setActivePage] = useState<string>("about");
