@@ -18,4 +18,4 @@ jobs:
         username: ${{ secrets.FTP_PRODUCTION_USERNAME }}
         password: ${{ secrets.FTP_PRODUCTION_PASSWORD }}
         protocol: ftps
-        server-dir: /home/wajih/ftp/files
+        server-dir: /home/wajih/ftp/files/
