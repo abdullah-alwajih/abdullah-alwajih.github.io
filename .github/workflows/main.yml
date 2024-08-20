@@ -18,4 +18,4 @@ jobs:
           password: "${{ secrets.FTP_PRODUCTION_PASSWORD}}"
           sftp_only: true
           remote_path: './uploads/'
-          local_path: "./out/"
+          local_path: "./out/*"
