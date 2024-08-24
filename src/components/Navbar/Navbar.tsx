@@ -34,6 +34,7 @@ export default function Navbar() {
             {navItems.map((item, index) => (
               <li key={index} className={`${styles.list} ${pathname === item.path && styles.active}`}>
                <Link
+                 className={styles.link}
                 href={item.path}>
             <span className={styles.icon}
             dangerouslySetInnerHTML={{__html: item.icon(pathname === item.path ? 'black' : '#FFDB6E')}}/>
