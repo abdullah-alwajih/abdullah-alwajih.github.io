@@ -23,7 +23,9 @@ export default function Sidebar() {
         </div>
         <button className={styles.infoMoreBtn} onClick={handleToggle}>
           <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
+         <img
+            src="/assets/images/chevron-down.svg"
+            alt="chevron down" width="22" height={22}/>
         </button>
       </div>
       <div className={styles.sidebarInfoMore}>

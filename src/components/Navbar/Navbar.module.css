@@ -196,6 +196,18 @@ color: var(--orange-yellow-crayola);
   transform: translateX(calc(140px));
 }
 
+/* Navbar.module.css */
+.iconMask {
+  -webkit-mask-image: var(--icon-url);
+  mask-image: var(--icon-url);
+  background-color: var(--icon-bg-color, white);
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+
+
 /* Responsive styles for larger than 570px screen */
 
 

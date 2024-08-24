@@ -215,7 +215,7 @@
     font-size: var(--fs-8);
   }
 
-  .infoMoreBtn Image {
+  .infoMoreBtn img {
     display: none;
   }
 

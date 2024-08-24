@@ -22,16 +22,14 @@ export default function Navbar({activePage, setActivePage}: NavbarProps) {
     <>
       <nav className={styles.navbar}>
         <ul className={styles.navbarList}>
-          {navItems.map((item, index) => (
-            <li className="navbar-item" key={index}>
+          {navItems.map((item, index) => (<li className="navbar-item" key={index}>
               <button
                 className={`${styles.navbarLink} ${activePage === item.name && styles.active}`}
                 onClick={() => handleClick(item.name)}
               >
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
               </button>
-            </li>
-          ))}
+            </li>))}
         </ul>
       </nav>
 
@@ -40,17 +38,15 @@ export default function Navbar({activePage, setActivePage}: NavbarProps) {
           <ul>
             {navItems.map((item, index) => (
               <li key={index} className={`${styles.list} ${activePage === item.name && styles.active}`}>
-                <button  onClick={() => handleClick(item.name)}>
-              <span className={styles.icon}>
-                <ion-icon name={item.icon}></ion-icon>
-              </span>
+                <button onClick={() => handleClick(item.name)}>
+            <span className={styles.icon}
+            dangerouslySetInnerHTML={{__html: item.icon(activePage === item.name ? 'black' : '#FFDB6E')}}/>
+
                 </button>
-              </li>
-            ))}
+              </li>))}
             <div className={styles.indicator}></div>
           </ul>
         </div>
       </div>
-    </>
-  );
+    </>);
 }
