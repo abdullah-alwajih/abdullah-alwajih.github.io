@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import {useState} from "react";
 import styles from './Sidebar.module.css'
@@ -29,7 +31,7 @@ export default function Sidebar() {
         </button>
       </div>
       <div className={styles.sidebarInfoMore}>
-        <div className={styles.separator}></div>
+        <div className="separator"></div>
         <ul className={styles.contactsList}>
           {contacts.map((contact, index) => (
             <li key={index} className={styles.contactItem}>
@@ -51,7 +53,7 @@ export default function Sidebar() {
             </li>
           ))}
         </ul>
-        <div className={styles.separator}></div>
+        <div className="separator"></div>
         <ul className={styles.socialList}>
           {socialLinks.map((social, index) => (
             <li key={index} className={styles.socialItem}>

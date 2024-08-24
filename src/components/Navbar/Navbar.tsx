@@ -2,20 +2,15 @@
 
 import styles from './Navbar.module.css'
 
-import {Dispatch, SetStateAction} from "react";
 import {navItems} from "@/components/Navbar/Navbar.mock";
+import { usePathname } from 'next/navigation';
+import Link from "next/link";
 
-interface NavbarProps {
-  activePage: string;
-  setActivePage: Dispatch<SetStateAction<string>>;
-}
 
-export default function Navbar({activePage, setActivePage}: NavbarProps) {
+export default function Navbar() {
+  const pathname = usePathname();
 
-  const handleClick = (page: string) => {
-    setActivePage(page);
-    window.scrollTo(0, 0);
-  };
+
 
   return (
 
@@ -23,12 +18,12 @@ export default function Navbar({activePage, setActivePage}: NavbarProps) {
       <nav className={styles.navbar}>
         <ul className={styles.navbarList}>
           {navItems.map((item, index) => (<li className="navbar-item" key={index}>
-              <button
-                className={`${styles.navbarLink} ${activePage === item.name && styles.active}`}
-                onClick={() => handleClick(item.name)}
+              <Link
+                href={item.path}
+                className={`${styles.navbarLink} ${pathname === item.path && styles.active}`}
               >
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
-              </button>
+              </Link>
             </li>))}
         </ul>
       </nav>
@@ -37,12 +32,13 @@ export default function Navbar({activePage, setActivePage}: NavbarProps) {
         <div className={styles.navigation}>
           <ul>
             {navItems.map((item, index) => (
-              <li key={index} className={`${styles.list} ${activePage === item.name && styles.active}`}>
-                <button onClick={() => handleClick(item.name)}>
+              <li key={index} className={`${styles.list} ${pathname === item.path && styles.active}`}>
+               <Link
+                href={item.path}>
             <span className={styles.icon}
-            dangerouslySetInnerHTML={{__html: item.icon(activePage === item.name ? 'black' : '#FFDB6E')}}/>
+            dangerouslySetInnerHTML={{__html: item.icon(pathname === item.path ? 'black' : '#FFDB6E')}}/>
 
-                </button>
+                </Link>
               </li>))}
             <div className={styles.indicator}></div>
           </ul>

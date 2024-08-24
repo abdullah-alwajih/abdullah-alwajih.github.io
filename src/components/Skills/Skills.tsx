@@ -1,15 +1,14 @@
-import Projects from "@/components/Projects/Projects";
 
 export default function Skills({isActive}: {isActive: boolean}) {
   return (
     <article className={`portfolio ${isActive? "active" : ""}`}>
 
       <header>
-        <h2 className="h2 article-title">Portfolio</h2>
+        <h2 className="h2 article-title">Skills</h2>
       </header>
 
 
-      <Projects/>
+
 
 
       <section className="skill">
