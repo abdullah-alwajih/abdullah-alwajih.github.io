@@ -5,5 +5,5 @@ import Experiences from "@/components/Experiences/Experiences";
 
 
 export default function ExperiencesPage() {
-  return (<Experiences isActive={usePathname() === '/experiences'}/>);
+  return (<Experiences isActive={usePathname() === '/experiences/'}/>);
 }

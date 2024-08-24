@@ -6,5 +6,5 @@ import Contact from "@/components/Contact/Contact";
 
 export default function ContactPage() {
 
-  return (<Contact isActive={usePathname() === '/contact'}/>);
+  return (<Contact isActive={usePathname() === '/contact/'}/>);
 }
