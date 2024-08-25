@@ -19,8 +19,9 @@ export default function Navbar() {
         <ul className={styles.navbarList}>
           {navItems.map((item, index) => (<li className="navbar-item" key={index}>
               <Link
+
                 href={item.path}
-                className={`${styles.navbarLink} ${pathname === item.path && styles.active}`}
+                className={`${styles.navbarLink} ${styles.link} ${pathname === item.path && styles.active}`}
               >
                 {item.name.charAt(0).toUpperCase() + item.name.slice(1)}
               </Link>
