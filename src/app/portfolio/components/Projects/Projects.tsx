@@ -1,7 +1,6 @@
 "use client";
 import React, {useState} from "react";
-import Image from "next/image";
-import {platforms} from "@/components/Projects/Projects.mock";
+import {platforms} from "@/app/portfolio/components/Projects/Projects.mock";
 
 const projectData = [{
   id: 1,
@@ -72,7 +71,12 @@ export default function Projects() {
       <button className={`filter-select ${isSelectActive ? "active" : ""}`} onClick={toggleSelect}>
         <div className="select-value">{selectedCategory === "all" ? "Select category" : selectedCategory}</div>
         <div className="select-icon">
-          <ion-icon name="chevron-down"></ion-icon>
+          <img
+            src="/assets/images/chevron-down.svg"
+            alt="chevron down" width="20" height="20"/>
+          {/* color svg required white  */}
+
+
         </div>
       </button>
       {isSelectActive && (<ul className="select-list">
@@ -89,9 +93,9 @@ export default function Projects() {
           <a href="#">
             <figure className="project-img">
               <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
+                <img src="/assets/images/eye.svg" alt="eye" width={20} height={20}/>
               </div>
-              <Image src={project.src} width={600} height={450} alt={project.alt} loading="lazy"/>
+              <img src={project.src} width={600} height={450} alt={project.alt} loading="lazy"/>
             </figure>
             <h3 className="project-title">{project.title}</h3>
             <p className="project-category">{project.category}</p>

@@ -30,11 +30,11 @@ export const contacts = [
 
 export const socialLinks = [
   {
-    icon: "logo-github",
+    icon: "/assets/images/github.svg",
     link: "https://github.com/abdullah-alwajih",
   },
   {
-    icon: "logo-linkedin",
+    icon: "/assets/images/linkedin.svg",
     link: "https://www.linkedin.com/in/abdullah-alwajih",
   },
 ];

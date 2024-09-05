@@ -232,7 +232,7 @@ article {
   z-index: -1;
 }
 
-.icon-box ion-icon {
+.icon-box img {
   --ionicon-stroke-width: 35px;
 }
 
@@ -575,7 +575,7 @@ main {
   opacity: 1;
 }
 
-.modal-close-btn ion-icon {
+.modal-close-btn img {
   --ionicon-stroke-width: 50px;
 }
 
@@ -914,7 +914,7 @@ main {
   opacity: 1;
 }
 
-.project-item-icon-box ion-icon {
+.project-item-icon-box img {
   --ionicon-stroke-width: 50px;
 }
 
@@ -1148,7 +1148,7 @@ textarea.form-input::-webkit-resizer {
   transition: var(--transition-1);
 }
 
-.form-btn ion-icon {
+.form-btn img {
   font-size: 16px;
 }
 
@@ -1308,7 +1308,7 @@ textarea.form-input::-webkit-resizer {
     font-size: var(--fs-8);
   }
 
-  .info_more-btn ion-icon {
+  .info_more-btn img {
     display: none;
   }
 
@@ -1505,7 +1505,7 @@ textarea.form-input::-webkit-resizer {
     padding: 16px 20px;
   }
 
-  .form-btn ion-icon {
+  .form-btn img {
     font-size: 18px;
   }
 

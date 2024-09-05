@@ -58,7 +58,7 @@ export default function ContactForm() {
           onChange={handleChange}
         ></textarea>
         <button className="form-btn" type="submit" disabled={!isFormValid}>
-          <ion-icon name="paper-plane"></ion-icon>
+          <img src="/assets/images/send.svg" alt="send" width={20} height={20}/>
           <span>Send Message</span>
         </button>
       </form>

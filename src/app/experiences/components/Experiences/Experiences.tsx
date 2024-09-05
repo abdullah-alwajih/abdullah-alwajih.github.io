@@ -1,4 +1,7 @@
-import {timelineAcademicExperience, timelineWorkExperience} from "@/components/Experiences/Experiences.mock";
+import {
+  timelineAcademicExperience,
+  timelineWorkExperience
+} from "@/app/experiences/components/Experiences/Experiences.mock";
 
 export default function Experiences({isActive}: { isActive: boolean }) {
   return (
@@ -11,7 +14,7 @@ export default function Experiences({isActive}: { isActive: boolean }) {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
+            <img src="/assets/images/fire.svg" alt="experience" width={20} height={20}/>
           </div>
           <h3 className="h3">Work Experience</h3>
         </div>
@@ -29,7 +32,7 @@ export default function Experiences({isActive}: { isActive: boolean }) {
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
-            <ion-icon name="book-outline"></ion-icon>
+            <img src="/assets/images/fire.svg" alt="experience" width={20} height={20}/>
           </div>
           <h3 className="h3">Academic Experience</h3>
         </div>

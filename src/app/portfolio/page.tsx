@@ -1,7 +1,7 @@
 "use client";
 
 
-import Projects from "@/components/Projects/Projects";
+import Projects from "@/app/portfolio/components/Projects/Projects";
 import {usePathname} from "next/navigation";
 
 export default function Portfolio() {

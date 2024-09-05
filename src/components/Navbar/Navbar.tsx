@@ -38,7 +38,7 @@ export default function Navbar() {
                  className={styles.link}
                 href={item.path}>
             <span className={styles.icon}
-            dangerouslySetInnerHTML={{__html: item.icon(pathname === item.path ? 'black' : '#FFDB6E')}}/>
+            dangerouslySetInnerHTML={{__html: item.icon(pathname === item.path ? 'black' : '#FFDB70')}}/>
 
                 </Link>
               </li>))}

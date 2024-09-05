@@ -1,7 +1,7 @@
 "use client";
 
 import {usePathname} from "next/navigation";
-import Skills from "@/components/Skills/Skills";
+import Skills from "@/app/skills/components/Skills/Skills";
 
 
 export default function SkillsPage() {

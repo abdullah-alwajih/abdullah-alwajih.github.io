@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import ContactForm from "@/app/contact/components/ContactForm";
 
 export default function Contact({isActive}: { isActive: boolean }) {
 

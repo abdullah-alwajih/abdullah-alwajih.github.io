@@ -58,7 +58,7 @@ export default function Sidebar() {
           {socialLinks.map((social, index) => (
             <li key={index} className={styles.socialItem}>
               <a href={social.link} target="_blank" className={styles.socialLink} rel="noopener noreferrer">
-                <ion-icon name={social.icon}></ion-icon>
+                <img src={social.icon} alt={social.icon} width={20} height={20}/>
               </a>
             </li>
           )

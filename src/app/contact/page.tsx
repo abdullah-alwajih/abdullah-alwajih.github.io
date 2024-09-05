@@ -2,7 +2,7 @@
 
 
 import {usePathname} from "next/navigation";
-import Contact from "@/components/Contact/Contact";
+import Contact from "@/app/contact/components/Contact/Contact";
 
 export default function ContactPage() {
   return (<Contact isActive={usePathname() === '/contact/'}/>);
