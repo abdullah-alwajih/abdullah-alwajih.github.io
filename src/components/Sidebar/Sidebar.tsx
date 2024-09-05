@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import {useState} from "react";
 import styles from './Sidebar.module.css'
 import {contacts, socialLinks} from "@/components/Sidebar/Sidebar.mock";
@@ -15,8 +14,8 @@ export default function Sidebar() {
     <aside className={`${styles.sidebar}  ${isActive && styles.active}`}>
       <div className={styles.sidebarInfo}>
         <figure className={styles.avatarBox}>
-          <Image
-            src="/assets/images/test.svg" priority
+          <img
+            src="/assets/images/test.svg"
             alt="Richard hanrick" width="80" height={80}/>
         </figure>
         <div className={styles.infoContent}>
@@ -36,7 +35,7 @@ export default function Sidebar() {
           {contacts.map((contact, index) => (
             <li key={index} className={styles.contactItem}>
               <div className="icon-box">
-                <Image src={contact.icon} alt={contact.icon} width={20} height={20}/>
+                <img src={contact.icon} alt={contact.icon} width={20} height={20}/>
               </div>
               <div className={styles.contactInfo}>
                 <p className={styles.contactTitle}>{contact.title}</p>
