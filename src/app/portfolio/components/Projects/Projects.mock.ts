@@ -49,19 +49,19 @@ export const projectData = [
     id: 7,
     title: "Floosak - Money Transfer",
     category: "mobile app",
-    src: "/assets/images/project-7.jpg",
+    src: "/assets/images/project-8.jpg",
     alt: "task manager"
   },
   {
     id: 8,
     title: "BEESAPP - Marketing",
     category: "mobile app",
-    src: "/assets/images/project-8.jpg",
+    src: "/assets/images/project-8.png",
     alt: "task manager"
   },
   {
     id: 9,
-    title: "Basher - Services",
+    title: "Basher - Delivery services",
     category: "mobile app",
     src: "/assets/images/project-9.png",
     alt: "arrival"
