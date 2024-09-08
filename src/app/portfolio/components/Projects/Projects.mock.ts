@@ -25,7 +25,7 @@ export const projectData = [
   },
   {
     id: 4,
-    title: "Basher Captain",
+    title: "Basher Captain - Delivery",
     category: "mobile app",
     src: "/assets/images/project-4.png",
     alt: "brawlhalla"
@@ -44,22 +44,24 @@ export const projectData = [
     src: "/assets/images/project-6.png",
     alt: "metaspark"
   },
-  {
-    id: 7, title: "Summary",
-    category: "web development",
-    src: "/assets/images/project-7.png",
-    alt: "summary"
+
+   {
+    id: 7,
+    title: "Floosak - Money Transfer",
+    category: "mobile app",
+    src: "/assets/images/project-7.jpg",
+    alt: "task manager"
   },
   {
     id: 8,
-    title: "Floosak - Money Transfer",
+    title: "BEESAPP - Marketing",
     category: "mobile app",
     src: "/assets/images/project-8.jpg",
     alt: "task manager"
   },
   {
     id: 9,
-    title: "Basher Delivery",
+    title: "Basher - Services",
     category: "mobile app",
     src: "/assets/images/project-9.png",
     alt: "arrival"
