@@ -1,38 +1,7 @@
 "use client";
 import React, {useState} from "react";
-import {platforms} from "@/app/portfolio/components/Projects/Projects.mock";
+import {platforms, projectData} from "@/app/portfolio/components/Projects/Projects.mock";
 
-const projectData = [{
-  id: 1,
-  title: "Finance",
-  category: "web development",
-  src: "/assets/images/project-1.jpg",
-  alt: "finance"
-}, {id: 2, title: "Orizon", category: "web development", src: "/assets/images/project-2.png", alt: "orizon"}, {
-  id: 3,
-  title: "Fundo",
-  category: "web design",
-  src: "/assets/images/project-3.jpg",
-  alt: "fundo"
-}, {
-  id: 4,
-  title: "UNICEF APP",
-  category: "mobile app",
-  src: "/assets/images/project-4.png",
-  alt: "brawlhalla"
-}, {id: 5, title: "DSM.", category: "web design", src: "/assets/images/project-5.png", alt: "dsm."}, {
-  id: 6,
-  title: "MetaSpark",
-  category: "web design",
-  src: "/assets/images/project-6.png",
-  alt: "metaspark"
-}, {id: 7, title: "Summary", category: "web development", src: "/assets/images/project-7.png", alt: "summary"}, {
-  id: 8,
-  title: "Floosak - Money Transfer",
-  category: "mobile app",
-  src: "/assets/images/project-8.jpg",
-  alt: "task manager"
-}, {id: 9, title: "Arrival", category: "web development", src: "/assets/images/project-9.png", alt: "arrival"},];
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
