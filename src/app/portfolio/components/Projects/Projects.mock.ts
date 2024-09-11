@@ -39,7 +39,7 @@ export const projectData = [
   },
   {
     id: 6,
-    title: "MetaSpark",
+    title: "Slack Clone",
     category: "web design",
     src: "/assets/images/project-6.png",
     alt: "metaspark"
