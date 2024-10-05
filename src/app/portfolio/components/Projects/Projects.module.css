@@ -65,6 +65,11 @@
   --eerie-black-2: hsl(240, 2%, 20%);
 }
 
+  .filterItem button:hover { color: var(--light-gray-70); }
+
+  .filterItem button.active { color: var(--orange-yellow-crayola); }
+
+
 .selectItem button {
   background: var(--eerie-black-2);
   color: var(--light-gray);
@@ -165,7 +170,7 @@
   opacity: 1;
 }
 
-.projectItemIconBoximg {
+.projectItemIconBoxImg {
   --ionicon-stroke-width: 50px;
 }
 

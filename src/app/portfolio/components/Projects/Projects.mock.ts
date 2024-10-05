@@ -1,69 +1,89 @@
+import {IProject} from "@/app/portfolio/components/ProjectModal/ProjectModal.mock";
+
 export const platforms = ["All", "Web design", "Mobile App", "Web development"]
 
 
-export const projectData = [
+export const projectData: IProject[] = [
   {
-    id: 1,
+    id: '1',
     title: "Finance",
     category: "web development",
     src: "/assets/images/project-1.jpg",
-    alt: "finance"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 2,
+    id: '2',
     title: "Orizon",
     category: "web development",
     src: "/assets/images/project-2.png",
-    alt: "orizon"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 3,
+    id: '3',
     title: "Fundo",
     category: "web design",
     src: "/assets/images/project-3.jpg",
-    alt: "fundo"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 4,
+    id: '4',
     title: "Basher Captain - Delivery",
     category: "mobile app",
     src: "/assets/images/project-4.png",
-    alt: "brawlhalla"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 5,
+    id: '5',
     title: "DSM.",
     category: "web design",
     src: "/assets/images/project-5.png",
-    alt: "dsm."
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 6,
+    id: '6',
     title: "Slack Clone",
     category: "web design",
     src: "/assets/images/project-6.png",
-    alt: "metaspark"
+    description: "",
+    technologies: [],
+    link: ""
   },
 
-   {
-    id: 7,
+  {
+    id: '7',
     title: "Floosak - Money Transfer",
     category: "mobile app",
     src: "/assets/images/project-8.jpg",
-    alt: "task manager"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 8,
+    id: '8',
     title: "BEESAPP - Marketing",
     category: "mobile app",
     src: "/assets/images/project-8.png",
-    alt: "task manager"
+    description: "",
+    technologies: [],
+    link: ""
   },
   {
-    id: 9,
+    id: '9',
     title: "Basher - Delivery services",
     category: "mobile app",
     src: "/assets/images/project-9.png",
-    alt: "arrival"
+    description: "",
+    technologies: [],
+    link: ""
   },
 ];

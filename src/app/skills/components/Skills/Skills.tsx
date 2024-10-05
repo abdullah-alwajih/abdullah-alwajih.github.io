@@ -1,22 +1,12 @@
-
-export default function Skills({isActive}: {isActive: boolean}) {
+export default function Skills({isActive}: { isActive: boolean }) {
   return (
-    <article className={`portfolio ${isActive? "active" : ""}`}>
-
+    <article className={`portfolio ${isActive ? "active" : ""}`}>
       <header>
         <h2 className="h2 article-title">Skills</h2>
       </header>
-
-
-
-
-
       <section className="skill">
-
         <h3 className="h3 skills-title">My skills</h3>
-
         <ul className="skills-list content-card">
-
           <li className="skills-item">
 
             <div className="title-wrapper">
