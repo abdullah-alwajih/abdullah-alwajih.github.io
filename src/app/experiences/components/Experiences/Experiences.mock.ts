@@ -1,4 +1,12 @@
-export const timelineWorkExperience = [
+export interface IExperience {
+  title: string;
+  date: string;
+  companyName: string;
+  location: string;
+  description: string;
+}
+
+export const timelineWorkExperience: IExperience[] = [
   {
     title: "Frontend Developer",
     date: "Sep/2023 - Sep/2024",
@@ -24,7 +32,7 @@ export const timelineWorkExperience = [
 ];
 
 
-export const timelineAcademicExperience = [
+export const timelineAcademicExperience: IExperience[] = [
   {
     title: "Teaching Assistant for Information Security",
     date: "Jan 2022 - Nov 2022",
