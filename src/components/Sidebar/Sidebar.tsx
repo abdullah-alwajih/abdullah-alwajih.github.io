@@ -20,7 +20,7 @@ export default function Sidebar() {
         </figure>
         <div className={styles.infoContent}>
           <h1 className={styles.name} title="">Abdullah AL-Wajih</h1>
-          <p className={styles.title}>Software Engineer</p>
+          <p className={styles.title}>Software Engineer v2</p>
         </div>
         <button className={styles.infoMoreBtn} onClick={handleToggle}>
           <span>Show Contacts</span>
